@@ -41,6 +41,17 @@ export const projects: Project[] = [
         github: "https://github.com/b6428259/my-ticketing-system",
         featured: true
     },
+    {
+        id: 3,
+        title: "MusicBeats",
+        description: "merges the styles of https://www.musicarms.net and https://www.beatsbydre.com/ into a single webpage.",
+        image: "https://i.imgur.com/AnwBbXW.png",
+        link: "https://b6428259.github.io/MusicBeats/",
+        tags: ["React", "Spring Boot", "MySQL", "Stripe"],
+        github: "https://github.com/b6428259/MusicBeats",
+        featured: true
+    },
+
 ];
 
 export const skills = [
