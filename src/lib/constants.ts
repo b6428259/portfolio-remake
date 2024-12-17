@@ -131,17 +131,6 @@ export const skills = [
                 icon: "git",
                 color: "#F05032"
             },
-            {
-                name: "Git",
-                icon: "git",
-                color: "#F05032"
-            },
-            {
-                name: "Git",
-                icon: "git",
-                color: "#F05032"
-            },
-
         ]
     }
 ];
