@@ -48,7 +48,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       className="group bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
     >
       {/* Image Container */}
-      <motion.div 
+      <motion.div
         className="relative h-48 sm:h-64 overflow-hidden"
         variants={imageVariants}
         initial="rest"
@@ -69,7 +69,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       <div className="relative p-6">
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-3">
-          {project.tags.map((tag, i) => (
+          {project.tags.map((tag) => (  // เอา i ออก
             <motion.span
               key={tag}
               variants={tagVariants}
@@ -77,7 +77,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               whileHover="hover"
               transition={{ duration: 0.2 }}
               className="px-3 py-1 text-xs rounded-full bg-secondary text-secondary-foreground
-                hover:bg-primary hover:text-primary-foreground transition-colors"
+      hover:bg-primary hover:text-primary-foreground transition-colors"
             >
               {tag}
             </motion.span>
@@ -92,7 +92,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         >
           {project.title}
         </motion.h3>
-        
+
         <p className="text-muted-foreground mb-4">
           {project.description}
         </p>
