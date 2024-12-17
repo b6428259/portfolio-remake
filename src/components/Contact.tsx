@@ -69,10 +69,10 @@ export default function Contact() {
         try {
             setIsSubmitting(true);
             const result = await emailjs.sendForm(
-                'YOUR_SERVICE_ID',
-                'YOUR_TEMPLATE_ID',
+                'service_lcts9xe',
+                'template_wp7ziea',
                 formRef.current,
-                'YOUR_PUBLIC_KEY'
+                'xWlTtXfg80GaI9bIj'
             );
 
             if (result.text === 'OK') {
