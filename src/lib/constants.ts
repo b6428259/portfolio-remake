@@ -17,6 +17,7 @@ export const personalInfo = {
     github?: string;
     demo?: string;
     featured: boolean;
+    link?: string;
   };
   
   export const projects: Project[] = [
@@ -24,18 +25,20 @@ export const personalInfo = {
       id: 1,
       title: "Kongpatana Workshop Viewer",
       description: "Advanced 3D model viewer with real-time manipulation, dynamic lighting, and responsive design.",
-      image: "/images/kongpatana.png",
+      image: "https://i.imgur.com/zkxrSDh.png",
+      link: "https://kongpatana-workshop-viewer.vercel.app/",
       tags: ["React", "Three.js", "WebGL", "Tailwind CSS"],
-      github: "https://github.com/b6428259/kongpatana-viewer",
+      github: "https://github.com/b6428259/3d-model",
       featured: true
     },
     {
       id: 2,
       title: "SpotUp",
       description: "Event ticketing platform with secure payment processing and ticket scanning system.",
-      image: "/images/spotup.png",
+      image: "https://i.imgur.com/smwHaSE.png",
+      link: "https://spotup.shop",
       tags: ["React", "Spring Boot", "MySQL", "Stripe"],
-      github: "https://github.com/b6428259/spotup",
+      github: "https://github.com/b6428259/my-ticketing-system",
       featured: true
     }
   ];
