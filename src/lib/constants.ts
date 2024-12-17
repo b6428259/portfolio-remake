@@ -50,6 +50,24 @@ export const projects: Project[] = [
         github: "",
         featured: true
     },
+    {
+        id: 3,
+        title: "Portfolio",
+        description: "Personal portfolio website showcasing my projects and skills.",
+        image: "",
+        tags: ["React", "Next.js", "Tailwind CSS"],
+        github: "",
+        featured: true
+    },
+    {
+        id: 3,
+        title: "Portfolio",
+        description: "Personal portfolio website showcasing my projects and skills.",
+        image: "",
+        tags: ["React", "Next.js", "Tailwind CSS"],
+        github: "",
+        featured: true
+    },
 ];
 
 export const skills = [
