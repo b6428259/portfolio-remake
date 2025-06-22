@@ -69,7 +69,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       <div className="relative p-6">
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-3">
-          {project.tags.map((tag) => (  // เอา i ออก
+          {project.tags.map((tag) => (
             <motion.span
               key={tag}
               variants={tagVariants}
@@ -77,7 +77,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               whileHover="hover"
               transition={{ duration: 0.2 }}
               className="px-3 py-1 text-xs rounded-full bg-secondary text-secondary-foreground
-      hover:bg-primary hover:text-primary-foreground transition-colors"
+                hover:bg-primary hover:text-primary-foreground transition-colors"
             >
               {tag}
             </motion.span>
@@ -112,9 +112,10 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               <span>Code</span>
             </motion.a>
           )}
-          {project.demo && (
+          {/* รองรับทั้ง demo และ link (backward compatibility) */}
+          {(project.demo || project.link) && (
             <motion.a
-              href={project.demo}
+              href={project.demo || project.link}
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, rotate: -5 }}

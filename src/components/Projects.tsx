@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { projects } from '@/lib/constants';
-import ProjectCard from './projects/ProjectCards';
+import ProjectCard from '@/components/projects/ProjectCards'; // แก้ไขจาก ProjectCards เป็น ProjectCard
 
 export default function Projects() {
   const [filter, setFilter] = useState<string>('all');
